@@ -187,6 +187,86 @@
 
     </ul>
 
+    <!-- Featured-Categories -->
+    <div class="feature-heading">
+      <h2>
+        Featured Categories
+      </h2>
+    </div>
+
+    <ul id="autoWidth">
+      <!-- 1 -->
+      <li class="item">
+        <!-- feature-box -->
+        <div class="feature-box">
+          <a href="">
+            <img src="images/feature_1.jpg" alt="">
+          </a>
+        </div>
+        <!-- text -->
+        <span>T-Shirt</span>
+      </li>
+
+      <!-- 2 -->
+      <li class="item">
+        <!-- feature-box -->
+        <div class="feature-box">
+          <a href="">
+            <img src="images/feature_2.jpg" alt="">
+          </a>
+        </div>
+        <!-- text -->
+        <span>T-Shirt</span>
+      </li>
+
+      <!-- 3 -->
+      <li class="item">
+        <!-- feature-box -->
+        <div class="feature-box">
+          <a href="">
+            <img src="images/feature_3.jpg" alt="">
+          </a>
+        </div>
+        <!-- text -->
+        <span>T-Shirt</span>
+      </li>
+
+      <!-- 4 -->
+      <li class="item">
+        <!-- feature-box -->
+        <div class="feature-box">
+          <a href="">
+            <img src="images/feature_4.jpg" alt="">
+          </a>
+        </div>
+        <!-- text -->
+        <span>T-Shirt</span>
+      </li>
+
+      <!-- 5 -->
+      <li class="item">
+        <!-- feature-box -->
+        <div class="feature-box">
+          <a href="">
+            <img src="images/feature_5.jpg" alt="">
+          </a>
+        </div>
+        <!-- text -->
+        <span>T-Shirt</span>
+      </li>
+
+      <!-- 6 -->
+      <li class="item">
+        <!-- feature-box -->
+        <div class="feature-box">
+          <a href="">
+            <img src="images/feature_6.jpg" alt="">
+          </a>
+        </div>
+        <!-- text -->
+        <span>T-Shirt</span>
+      </li>
+    </ul>
 
     <script>
       /*-----For Search Bar-----------------------------*/
@@ -219,6 +299,17 @@
           item: 1,
           slideMargin: 0,
           loop: true
+        });
+      });
+
+      /*-------Feature Slider-----------------------*/
+      $(document).ready(function () {
+        $('#autoWidth').lightSlider({
+          autoWidth: true,
+          loop: true,
+          onSliderLoad: function () {
+            $('#autoWidth').removeClass('cS-hidden');
+          }
         });
       });
 
