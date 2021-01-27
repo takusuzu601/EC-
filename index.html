@@ -1,58 +1,76 @@
-<!DOCTYPE html>
-<html lang="ja">
+<html>
 
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping-website</title>
-    <!-- style.css -->
+    <meta charset="utf-8">
+    <meta content="IE-edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, intial-scale=1.0" name="viewport">
+    <title>Shopping Website</title>
+    <!--fav-icon---------------->
+    <link rel="shortcut icon" href="images/fav-icon.png" />
+    <!--style----->
     <link rel="stylesheet" href="css/style.css">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="images/fav-icon.png">
-    <!-- font-awsome -->
-    <script src="https://kit.fontawesome.com/5445318923.js" crossorigin="anonymous"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+      body {
+        font-family: poppins;
+      }
+
+    </style>
+
   </head>
 
   <body>
-    <!-- navigation -->
     <nav>
+      <!--social-links-and-phone-number----------------->
       <div class="social-call">
+        <!--social-links--->
         <div class="social">
-          <a href="#">
-            <a href=""><i class="fab fa-facebook-f"></i></a>
-            <a href=""><i class="fab fa-twitter"></i></a>
-            <a href=""><i class="fab fa-youtube"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
-          </a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
-
+        <!--phone-number------>
         <div class="phone">
-          <span>Call +123456789</span>
+          <span>Call: +123456789</span>
         </div>
       </div>
-
-      <!-- menu-bar -->
-      <div class="navigation"><a href="" class="logo"><img src="images/logo.png" alt=""></a>
+      <!--menu-bar----------------------------------------->
+      <div class="navigation">
+        <!--logo------------>
+        <a href="#" class="logo"><img src="images/logo.png"></a>
+        <!--menu-icon------------->
+        <div class="toggle"></div>
+        <!--menu----------------->
         <ul class="menu">
-          <li><a href="">Home</a></li>
-          <li><a href="">Men</a>
-            <!-- sale lable -->
+          <li><a href="#">Home</a></li>
+          <li class="shop"><a href="#">Shop</a></li>
+          <li><a href="#">Men</a>
+            <!--lable---->
             <span class="sale-lable">Sale</span>
           </li>
-          <li><a href="">Wormen</a></li>
-          <li><a href="">Kids</a></li>
-          <li><a href="">Shop</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
         </ul>
+        <!--right-menu----------->
         <div class="right-menu">
-          <a href="" class="search"><i class="fas fa-search"></i></a>
-          <a href="" class="user"><i class="far fa-user"></i></a>
-          <a href=""><i class="fas fa-shopping-cart">
+          <a href="javascript:void(0);" class="search">
+            <i class="fas fa-search"></i>
+          </a>
+          <a href="javascript:void(0);" class="user">
+            <i class="far fa-user"></i>
+          </a>
+          <a href="#">
+            <i class="fas fa-shopping-cart">
               <span class="num-cart-product">0</span>
             </i>
           </a>
         </div>
       </div>
     </nav>
+
     <!--search-bar----------------------------------->
     <div class="search-bar">
 
@@ -67,47 +85,53 @@
       </div>
     </div>
 
-    <!-- login-and-sign-up form ---------------------------->
+    <!---login-and-sign-up--------------------------------->
     <div class="form">
-      <!-- Login -->
+      <!--login---------->
       <div class="login-form">
-        <a href="#" class="form-cancel">
+        <!--cancel-btn---------------->
+        <a href="javascript:void(0);" class="form-cancel">
           <i class="fas fa-times"></i>
         </a>
-        <strong>Login</strong>
-        <form action="#">
-          <input type="email" placeholder="Exsample@gmail.com" name="email">
-          <input type="password" placeholder="Password" name="password">
-          <input type="submit" value="Log In">
+        <strong>Log In</strong>
+        <!--inputs-->
+        <form>
+          <input type="email" name="email" placeholder="Example@gmail.com" required />
+          <input type="password" name="password" placeholder="Password" required />
+          <input type="submit" value="Log In" />
         </form>
+        <!--forget-and-sign-up-btn-->
         <div class="form-btns">
           <a href="#" class="forget">Forget Your Password?</a>
-          <a href="#" class="sign-up-btn">Create Account</a>
+          <a href="javascript:void(0);" class="sign-up-btn">Create Account</a>
         </div>
       </div>
-      <!-- Sign Up -->
+      <!--Sign-up---------->
       <div class="sign-up-form">
-        <a href="#" class="form-cancel">
+        <!--cancel-btn---------------->
+        <a href="javascript:void(0);" class="form-cancel">
           <i class="fas fa-times"></i>
         </a>
         <strong>Sign Up</strong>
-        <form action="">
-          <input type="text" placeholder="Full Name" name="fullname">
-          <input type="email" placeholder="Exsample@gmail.com" name="email">
-          <input type="password" placeholder="Password" name="password">
-          <input type="submit" value="SignIn">
+        <!--inputs-->
+        <form>
+          <input type="text" name="fullname" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Example@gmail.com" required />
+          <input type="password" name="password" placeholder="Password" required />
+          <input type="submit" value="Sign Up" />
         </form>
+        <!--forget-and-sign-up-btn-->
         <div class="form-btns">
-          <a href="#" class="forget">Already Have Account?</a>
+          <a href="javascript:void(0);" class="already-account">
+            Already Have Account?</a>
+
         </div>
       </div>
     </div>
-    <!-- jQuery -->
+
     <script src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <!-- script -->
-    <!-- For Search bar -->
-    <script type="text/javascript">
+    <script>
       /*-----For Search Bar-----------------------------*/
       $(document).on('click', '.search', function () {
         $('.search-bar').addClass('search-bar-active')
@@ -117,10 +141,17 @@
         $('.search-bar').removeClass('search-bar-active')
       });
 
-      /*------login-sign-up-form-----------------------*/
+      /*---For Login and Sign-up----------------------------*/
+      $(document).on('click', '.user,.already-account', function () {
+        $('.form').addClass('login-active').removeClass('sign-up-active')
+      });
 
-      $(document).on('click', '.user', function () {
-        $('.form').addClass('login-active')
+      $(document).on('click', '.sign-up-btn', function () {
+        $('.form').addClass('sign-up-active').removeClass('login-active')
+      });
+
+      $(document).on('click', '.form-cancel', function () {
+        $('.form').removeClass('login-active').removeClass('sign-up-active')
       });
 
     </script>
