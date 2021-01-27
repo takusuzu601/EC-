@@ -1,2 +1,9 @@
 素材URL
 https://www.goingtointernet.com/2020/11/create-shopping-website.html
+
+jQuery バージョン
+Jquery version 3.5.1
+
+スライダーslider
+lightSlider
+http://sachinchoolur.github.io/lightslider/examples.html
