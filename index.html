@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping-website</title>
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/fav-icon.png">
+    <!-- font-awsome -->
+    <script src="https://kit.fontawesome.com/5445318923.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- navigation -->
+    <nav>
+      <div class="social-call">
+        <div class="social">
+          <a href="#">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </a>
+        </div>
+
+        <div class="phone">
+          <span>Call +123456789</span>
+        </div>
+      </div>
+
+      <!-- menu-bar -->
+      <div class="navigation"><a href="" class="logo"><img src="images/logo.png" alt=""></a>
+        <ul class="menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">Men</a>
+            <!-- sale lable -->
+            <span class="sale-lable">Sale</span>
+          </li>
+          <li><a href="">Wormen</a></li>
+          <li><a href="">Kids</a></li>
+          <li><a href="">Shop</a></li>
+        </ul>
+        <div class="right-menu">
+          <a href="" class="search"><i class="fas fa-search"></i></a>
+          <a href="" class="user"><i class="far fa-user"></i></a>
+          <a href=""><i class="fas fa-shopping-cart">
+              <span class="num-cart-product">0</span>
+            </i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!--search-bar----------------------------------->
+    <div class="search-bar">
+
+      <!--search-input------->
+      <div class="search-input">
+        <input type="text" placeholder="Search For Product" name="search" />
+        <!--cancel-btn--->
+        <a href="javascript:void(0);" class="search-cancel">
+          <i class="fas fa-times"></i>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- login-and-sign-up form ---------------------------->
+    <div class="form">
+      <!-- Login -->
+      <div class="login-form">
+        <a href="#" class="form-cancel">
+          <i class="fas fa-times"></i>
+        </a>
+        <strong>Login</strong>
+        <form action="#">
+          <input type="email" placeholder="Exsample@gmail.com" name="email">
+          <input type="password" placeholder="Password" name="password">
+          <input type="submit" value="Log In">
+        </form>
+        <div class="form-btns">
+          <a href="#" class="forget">Forget Your Password?</a>
+          <a href="#" class="sign-up-btn">Create Account</a>
+        </div>
+      </div>
+      <!-- Sign Up -->
+      <div class="sign-up-form">
+        <a href="#" class="form-cancel">
+          <i class="fas fa-times"></i>
+        </a>
+        <strong>Sign Up</strong>
+        <form action="">
+          <input type="text" placeholder="Full Name" name="fullname">
+          <input type="email" placeholder="Exsample@gmail.com" name="email">
+          <input type="password" placeholder="Password" name="password">
+          <input type="submit" value="SignIn">
+        </form>
+        <div class="form-btns">
+          <a href="#" class="forget">Already Have Account?</a>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- script -->
+    <!-- For Search bar -->
+    <script type="text/javascript">
+      /*-----For Search Bar-----------------------------*/
+      $(document).on('click', '.search', function () {
+        $('.search-bar').addClass('search-bar-active')
+      });
+
+      $(document).on('click', '.search-cancel', function () {
+        $('.search-bar').removeClass('search-bar-active')
+      });
+
+      /*------login-sign-up-form-----------------------*/
+
+      $(document).on('click', '.user', function () {
+        $('.form').addClass('login-active')
+      });
+
+    </script>
+  </body>
+
+</html>
